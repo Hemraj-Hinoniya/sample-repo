@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit & Streak Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Daily Habit Tracker</h1>
+      <p id="stats" aria-live="polite">0/0 completed today</p>
+    </header>
+
+    <form id="habit-form" autocomplete="off">
+      <label for="habit-input" class="visually-hidden">New Habit Name</label>
+      <input 
+        type="text" 
+        id="habit-input" 
+        placeholder="e.g., Read 20 pages, Solve 1 coding problem..." 
+        maxlength="60" 
+        required
+      >
+      <button type="submit">Add Habit</button>
+    </form>
+
+    <ul id="habit-list" class="habit-list" aria-label="Habits"></ul>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
